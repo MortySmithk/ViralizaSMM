@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.ibb.co/5X8G9Kn1/cineveo-logo-r.png?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVEO - Assista a Séries de TV e Filmes Online Grátis</title>
+    
+    <meta name="description" content="Navegue por um catálogo incrível de filmes e séries de TV para assistir online. Descubra lançamentos, clássicos e muito mais no CineVEO.">
+    <meta name="theme-color" content="#050505"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+      :root {
+          --color-background: #050505;
+          --color-surface: #111111;
+          --color-primary: #FBBF24;
+      }
+      body {
+          background-color: var(--color-background);
+          color: #E5E7EB;
+          font-family: 'Inter', sans-serif;
+      }
+      .rating-circle {
+          width: 60px; height: 60px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          background: radial-gradient(closest-side, #1A1A1A 79%, transparent 80% 100%),
+                      conic-gradient(var(--color-primary) var(--rating-percent, 0%), #333 0);
+          font-size: 1.1rem;
+          font-weight: 700;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+          color: white !important;
+          background-color: rgba(0,0,0,0.3);
+          width: 44px !important;
+          height: 44px !important;
+          border-radius: 50%;
+          backdrop-filter: blur(5px);
+      }
+      .swiper-button-prev:hover,
+      .swiper-button-next:hover {
+          background-color: var(--color-primary);
+          color: #111827 !important;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+          font-size: 1.2rem !important;
+          font-weight: 900;
+      }
+      .swiper-pagination-bullet {
+          background-color: rgba(255,255,255,0.5) !important;
+      }
+      .swiper-pagination-bullet-active {
+          background-color: var(--color-primary) !important;
+          width: 24px !important;
+          border-radius: 5px !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "firebase/": "https://esm.sh/firebase@^12.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.8.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.541.0",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "swiper/": "https://esm.sh/swiper@^11.2.10/",
+    "swiper": "https://esm.sh/swiper@^11.2.10",
+    "swiper/react": "https://esm.sh/swiper@^11.2.10/react",
+    "cropperjs": "https://esm.sh/cropperjs@^2.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text-light font-['Inter']">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
