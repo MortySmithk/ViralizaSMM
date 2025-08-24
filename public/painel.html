@@ -109,7 +109,7 @@
 
     <script>
         // --- CONFIGURAÇÃO DA API ---
-        const localApiUrl = '/api/proxy'; // Agora chamamos nosso próprio proxy
+        const localApiUrl = '/api/proxy';
 
         // --- ELEMENTOS DO DOM ---
         const categorySelect = document.getElementById('category');
@@ -133,16 +133,19 @@
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(params) // Enviamos os parâmetros como JSON
+                    body: JSON.stringify(params)
                 });
 
+                const result = await response.json();
+
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    const errorMessage = result.error || `HTTP error! status: ${response.status}`;
+                    throw new Error(errorMessage);
                 }
-                return await response.json();
+                return result;
             } catch (error) {
-                console.error("Erro na chamada da API local:", error);
-                alert("Ocorreu um erro de comunicação com o nosso servidor.");
+                console.error("Erro na chamada da API local:", error.message);
+                alert(`Erro: ${error.message}`);
                 return null;
             }
         }
