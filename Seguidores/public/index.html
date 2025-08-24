@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralizaSMM - Impulsione suas Redes Sociais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Cabeçalho -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-400">
+                ViralizaSMM
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#inicio" class="hover:text-blue-400 transition duration-300">Início</a>
+                <a href="#servicos" class="hover:text-blue-400 transition duration-300">Serviços</a>
+                <a href="#como-funciona" class="hover:text-blue-400 transition duration-300">Como Funciona</a>
+                <a href="#contato" class="hover:text-blue-400 transition duration-300">Contato</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <!-- Link para o painel -->
+                <a href="painel.html" class="px-4 py-2 rounded-md text-white bg-gray-800 hover:bg-gray-700 transition duration-300">Login</a>
+                <a href="#" class="px-4 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300">Cadastre-se</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#inicio" class="block py-2 hover:text-blue-400">Início</a>
+            <a href="#servicos" class="block py-2 hover:text-blue-400">Serviços</a>
+            <a href="#como-funciona" class="block py-2 hover:text-blue-400">Como Funciona</a>
+            <a href="#contato" class="block py-2 hover:text-blue-400">Contato</a>
+            <div class="mt-4 flex flex-col space-y-2">
+                 <a href="painel.html" class="w-full text-center px-4 py-2 rounded-md text-white bg-gray-800 hover:bg-gray-700 transition duration-300">Login</a>
+                <a href="#" class="w-full text-center px-4 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Herói -->
+        <section id="inicio" class="gradient-bg py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Aumente sua Presença Online Hoje</h1>
+                <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-8">O painel SMM mais completo e acessível para impulsionar suas redes sociais com seguidores, curtidas e visualizações reais.</p>
+                <a href="painel.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transform hover:scale-105 transition duration-300">Começar Agora</a>
+            </div>
+        </section>
+
+        <!-- Seção Como Funciona -->
+        <section id="como-funciona" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Simples, Rápido e Eficiente</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Passo 1 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-500 rounded-full p-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Crie sua Conta</h3>
+                        <p class="text-gray-400">O cadastro é gratuito e leva menos de um minuto. Seus dados estão seguros conosco.</p>
+                    </div>
+                    <!-- Passo 2 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-500 rounded-full p-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Adicione Saldo</h3>
+                        <p class="text-gray-400">Use diversos métodos de pagamento, como Pix e cartão de crédito, para adicionar fundos à sua conta.</p>
+                    </div>
+                    <!-- Passo 3 -->
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-500 rounded-full p-5 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Faça seu Pedido</h3>
+                        <p class="text-gray-400">Escolha o serviço desejado, insira o link e a quantidade. A mágica acontece em minutos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Nossos Principais Serviços</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card de Serviço -->
+                    <div class="glass-card rounded-lg p-6 text-center hover:bg-gray-700/50 transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/80x80/3b82f6/ffffff?text=IG" class="mx-auto mb-4 rounded-full" alt="Ícone do Instagram">
+                        <h3 class="text-xl font-bold mb-2">Instagram</h3>
+                        <p class="text-gray-300">Seguidores, curtidas, visualizações em Reels, comentários e muito mais.</p>
+                    </div>
+                    <!-- Card de Serviço -->
+                    <div class="glass-card rounded-lg p-6 text-center hover:bg-gray-700/50 transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/80x80/000000/ffffff?text=TT" class="mx-auto mb-4 rounded-full" alt="Ícone do TikTok">
+                        <h3 class="text-xl font-bold mb-2">TikTok</h3>
+                        <p class="text-gray-300">Aumente suas visualizações, seguidores e curtidas para viralizar.</p>
+                    </div>
+                    <!-- Card de Serviço -->
+                    <div class="glass-card rounded-lg p-6 text-center hover:bg-gray-700/50 transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/80x80/ff0000/ffffff?text=YT" class="mx-auto mb-4 rounded-full" alt="Ícone do YouTube">
+                        <h3 class="text-xl font-bold mb-2">YouTube</h3>
+                        <p class="text-gray-300">Inscritos, horas de exibição, likes e visualizações para seu canal.</p>
+                    </div>
+                    <!-- Card de Serviço -->
+                    <div class="glass-card rounded-lg p-6 text-center hover:bg-gray-700/50 transition duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/80x80/1da1f2/ffffff?text=TW" class="mx-auto mb-4 rounded-full" alt="Ícone do Twitter/X">
+                        <h3 class="text-xl font-bold mb-2">Twitter / X</h3>
+                        <p class="text-gray-300">Ganhe seguidores, retweets e curtidas para ampliar seu alcance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção CTA -->
+        <section id="contato" class="gradient-bg py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Pronto para Crescer?</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto mb-8">Junte-se a milhares de clientes satisfeitos e transforme suas redes sociais em uma potência.</p>
+                <a href="painel.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-100 transform hover:scale-105 transition duration-300">Criar minha conta agora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 ViralizaSMM. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white">Termos de Serviço</a>
+                <a href="#" class="hover:text-white">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
